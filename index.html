@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 3 - Responsive Web Design</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/task4.css">
+</head>
+<body>
+
+  <aside class="assignment-bar d-flex justify-content-between align-items-center flex-wrap gap-1">
+    <div class="fw-semibold text-light">Assignment #3</div>
+    <nav>
+      <a href="task0.html">Task 0</a>
+      <a href="task1.html">Task 1</a>
+      <a href="task2.html">Task 2</a>
+      <a href="task3.html">Task 3</a>
+      <a href="task4.html" class="active">Task 4</a>
+    </nav>
+  </aside>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+          <div class="brand-glyph">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 18l6-6-6-6"></path>
+              <path d="M8 6l-6 6 6 6"></path>
+            </svg>
+          </div>
+          <span>Muratbek Akyl</span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#portfolioNav" aria-controls="portfolioNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="portfolioNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+              <a class="btn btn-primary btn-sm px-3 py-2 rounded-pill fw-medium" href="#contact">Get in Touch</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero-section" id="about">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <div class="hero-badge">
+            <span class="pulse-dot"></span>
+            <span>Available for Junior Developer Roles</span>
+          </div>
+          <h1 class="hero-title mb-3">
+            Building High-Performance, Responsive Web Interfaces
+          </h1>
+          <p class="lead text-secondary mb-4">
+            Computer Science student specializing in modern front-end development, semantic architecture, and responsive layouts across all device form factors.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#projects" class="btn btn-primary px-4 py-2 rounded-pill fw-semibold">View Projects</a>
+            <a href="#contact" class="btn btn-outline-secondary px-4 py-2 rounded-pill fw-semibold">Contact Details</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mt-4 mt-lg-0">
+          <div class="row g-3 text-center">
+            <div class="col-6">
+              <div class="bg-white p-3 rounded-4 border shadow-sm">
+                <div class="h3 fw-bold text-primary mb-1">10+</div>
+                <div class="small text-muted">Completed Projects</div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="bg-white p-3 rounded-4 border shadow-sm">
+                <div class="h3 fw-bold text-primary mb-1">100%</div>
+                <div class="small text-muted">Responsive RWD</div>
+              </div>
+            </div>
+            <div class="col-6 stat-item-secondary">
+              <div class="bg-white p-3 rounded-4 border shadow-sm">
+                <div class="h3 fw-bold text-success mb-1">3.9</div>
+                <div class="small text-muted">Academic GPA</div>
+              </div>
+            </div>
+            <div class="col-6 stat-item-secondary">
+              <div class="bg-white p-3 rounded-4 border shadow-sm">
+                <div class="h3 fw-bold text-success mb-1">AITU</div>
+                <div class="small text-muted">Astana IT Univ</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="container my-5">
+    <div class="row g-4">
+      <section class="col-12 col-lg-8 order-2 order-lg-1" id="projects">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <div>
+            <h2 class="section-title mb-1">Featured Projects</h2>
+            <p class="text-secondary small mb-0">Production-ready applications built with modern web technologies</p>
+          </div>
+          <span class="badge bg-secondary-subtle text-secondary rounded-pill px-3 py-2 fw-semibold">4 Selected Works</span>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-12 col-md-6">
+            <article class="project-card">
+              <div class="project-thumb thumb-1">
+                <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+                <span class="project-thumb-badge">Full Stack</span>
+              </div>
+              <div class="project-body">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="text-primary small fw-semibold">Enterprise SaaS</span>
+                  <span class="badge bg-light text-dark border badge-desktop-only">React + Node</span>
+                </div>
+                <h3 class="project-title">DevFlow Agile Platform</h3>
+                <p class="project-desc">
+                  Collaborative kanban task tracker featuring real-time WebSocket sync, automated sprint velocity metrics, and responsive modal dialogues.
+                </p>
+                <div class="mb-3">
+                  <span class="skill-tag">HTML5</span>
+                  <span class="skill-tag">Bootstrap 5</span>
+                  <span class="skill-tag">JavaScript</span>
+                </div>
+                <div class="d-flex gap-2 mt-auto">
+                  <a href="#" class="btn btn-sm btn-outline-primary w-50">Live Demo</a>
+                  <a href="#" class="btn btn-sm btn-outline-dark w-50">GitHub</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <article class="project-card">
+              <div class="project-thumb thumb-2">
+                <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="9" cy="21" r="1"></circle>
+                  <circle cx="20" cy="21" r="1"></circle>
+                  <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                </svg>
+                <span class="project-thumb-badge">E-Commerce</span>
+              </div>
+              <div class="project-body">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="text-primary small fw-semibold">Web Application</span>
+                  <span class="badge bg-light text-dark border badge-desktop-only">Vue + REST</span>
+                </div>
+                <h3 class="project-title">ShopSphere Marketplace</h3>
+                <p class="project-desc">
+                  Responsive shopping storefront with live category filters, cart persistence via localStorage, and mobile-optimized checkout workflows.
+                </p>
+                <div class="mb-3">
+                  <span class="skill-tag">CSS3</span>
+                  <span class="skill-tag">Bootstrap Grid</span>
+                  <span class="skill-tag">Vue.js</span>
+                </div>
+                <div class="d-flex gap-2 mt-auto">
+                  <a href="#" class="btn btn-sm btn-outline-primary w-50">Live Demo</a>
+                  <a href="#" class="btn btn-sm btn-outline-dark w-50">GitHub</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <article class="project-card">
+              <div class="project-thumb thumb-3">
+                <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="18" y1="20" x2="18" y2="10"></line>
+                  <line x1="12" y1="20" x2="12" y2="4"></line>
+                  <line x1="6" y1="20" x2="6" y2="14"></line>
+                </svg>
+                <span class="project-thumb-badge">FinTech</span>
+              </div>
+              <div class="project-body">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="text-primary small fw-semibold">Data Dashboard</span>
+                  <span class="badge bg-light text-dark border badge-desktop-only">Chart.js + API</span>
+                </div>
+                <h3 class="project-title">CryptoPulse Analytics</h3>
+                <p class="project-desc">
+                  Financial telemetry dashboard rendering interactive price series, responsive order book graphs, and automated portfolio profit estimators.
+                </p>
+                <div class="mb-3">
+                  <span class="skill-tag">Chart.js</span>
+                  <span class="skill-tag">Media Queries</span>
+                  <span class="skill-tag">REST API</span>
+                </div>
+                <div class="d-flex gap-2 mt-auto">
+                  <a href="#" class="btn btn-sm btn-outline-primary w-50">Live Demo</a>
+                  <a href="#" class="btn btn-sm btn-outline-dark w-50">GitHub</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <article class="project-card">
+              <div class="project-thumb thumb-4">
+                <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                </svg>
+                <span class="project-thumb-badge">Cloud Storage</span>
+              </div>
+              <div class="project-body">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="text-primary small fw-semibold">Backend Service</span>
+                  <span class="badge bg-light text-dark border badge-desktop-only">FastAPI + S3</span>
+                </div>
+                <h3 class="project-title">CloudVault File Hub</h3>
+                <p class="project-desc">
+                  Encrypted object storage portal with drag-and-drop file ingestion, pre-signed upload URLs, and responsive directory management.
+                </p>
+                <div class="mb-3">
+                  <span class="skill-tag">FastAPI</span>
+                  <span class="skill-tag">Python</span>
+                  <span class="skill-tag">AWS S3</span>
+                </div>
+                <div class="d-flex gap-2 mt-auto">
+                  <a href="#" class="btn btn-sm btn-outline-primary w-50">Live Demo</a>
+                  <a href="#" class="btn btn-sm btn-outline-dark w-50">GitHub</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <aside class="col-12 col-lg-4 order-1 order-lg-2">
+        <div class="sidebar-card text-center">
+          <div class="avatar-wrapper">MA</div>
+          <h2 class="h5 fw-bold text-dark mb-1">Muratbek Akyl</h2>
+          <p class="text-primary small fw-medium mb-3">Junior Front-End &amp; Web Developer</p>
+          <p class="text-muted small mb-4">
+            Passionate about modern responsive web design, mobile-first layouts, and clean code principles.
+          </p>
+          <div class="d-flex justify-content-center gap-2 mb-2">
+            <span class="badge bg-light text-dark border">Astana, KZ</span>
+            <span class="badge bg-light text-dark border">Astana IT Univ</span>
+          </div>
+        </div>
+
+        <div class="sidebar-card" id="skills">
+          <h3 class="h6 fw-bold text-dark mb-3 text-uppercase" style="letter-spacing: 0.05em;">Core Competencies</h3>
+          <div class="d-flex flex-wrap">
+            <span class="skill-tag">HTML5 Semantic</span>
+            <span class="skill-tag">CSS3 Media Queries</span>
+            <span class="skill-tag">Bootstrap 5.3</span>
+            <span class="skill-tag">JavaScript ES6+</span>
+            <span class="skill-tag">Responsive Design</span>
+            <span class="skill-tag">Git &amp; GitHub</span>
+            <span class="skill-tag">Flexbox / Grid</span>
+            <span class="skill-tag">RESTful APIs</span>
+          </div>
+        </div>
+
+        <div class="sidebar-card" id="contact">
+          <h3 class="h6 fw-bold text-dark mb-3 text-uppercase" style="letter-spacing: 0.05em;">Contact Information</h3>
+          <div class="contact-list">
+            <a href="mailto:muratbekakyl9@gmail.com" class="contact-item">
+              <div class="contact-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div>
+                <div class="text-muted small" style="font-size: 0.75rem;">Email</div>
+                <div class="fw-semibold">muratbekakyl9@gmail.com</div>
+              </div>
+            </a>
+
+            <a href="tel:87054316308" class="contact-item">
+              <div class="contact-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <div>
+                <div class="text-muted small" style="font-size: 0.75rem;">Phone</div>
+                <div class="fw-semibold">8705 431 6308</div>
+              </div>
+            </a>
+
+            <a href="https://t.me/glokglok8" class="contact-item" target="_blank" rel="noopener">
+              <div class="contact-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </div>
+              <div>
+                <div class="text-muted small" style="font-size: 0.75rem;">Telegram</div>
+                <div class="fw-semibold">@glokglok8</div>
+              </div>
+            </a>
+
+            <a href="https://github.com/akylsolo" class="contact-item" target="_blank" rel="noopener">
+              <div class="contact-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+              </div>
+              <div>
+                <div class="text-muted small" style="font-size: 0.75rem;">GitHub</div>
+                <div class="fw-semibold">github.com/akylsolo</div>
+              </div>
+            </a>
+          </div>
+
+          <div class="mt-4">
+            <a href="mailto:muratbekakyl9@gmail.com" class="btn btn-primary w-100 rounded-pill py-2 fw-semibold">Send Direct Message</a>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="footer-custom">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-md-6 text-center text-md-start">
+          <div class="fw-bold text-white mb-1">Muratbek Akyl &bull; Front-End Portfolio</div>
+          <div class="small">Astana IT University &bull; Assignment #3: Responsive Web Design</div>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <div class="small text-secondary">
+            Built using Semantic HTML5, Bootstrap 5.3 Grid &amp; Pure Media Queries
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

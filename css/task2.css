@@ -1,0 +1,91 @@
+:root {
+  --bg-custom: #f8fafc;
+  --accent-color: #4f46e5;
+}
+
+body {
+  background-color: var(--bg-custom);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #1e293b;
+  overflow-x: hidden;
+}
+
+.top-nav {
+  background-color: #0f172a;
+  color: #f8fafc;
+  padding: 0.6rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  border-bottom: 1px solid #1e293b;
+}
+
+.top-nav-brand {
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: #f8fafc;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.top-nav-links {
+  display: flex;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+}
+
+.top-nav-link {
+  color: #94a3b8;
+  text-decoration: none;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.top-nav-link:hover {
+  color: #ffffff;
+  background-color: #1e293b;
+}
+
+.top-nav-link.active {
+  color: #ffffff;
+  background-color: #4f46e5;
+  font-weight: 600;
+}
+
+h1.display-6 {
+  font-size: clamp(1.4rem, 4vw, 2.25rem) !important;
+  word-break: break-word;
+}
+
+.card-feature {
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  background-color: #ffffff;
+}
+
+.card-feature:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05) !important;
+}
+
+.icon-box {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-explainer {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+}

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 2 - Bootstrap Responsive Columns</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/task2.css">
+</head>
+<body>
+
+  <header class="top-nav">
+    <a href="index.html" class="top-nav-brand">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+        <polyline points="2 17 12 22 22 17"></polyline>
+        <polyline points="2 12 12 17 22 12"></polyline>
+      </svg>
+      <span>Assignment #3</span>
+    </a>
+    <nav class="top-nav-links">
+      <a href="task0.html" class="top-nav-link">Task 0: Typography</a>
+      <a href="task1.html" class="top-nav-link">Task 1: Media Layout</a>
+      <a href="task2.html" class="top-nav-link active">Task 2: Bootstrap Grid</a>
+      <a href="task3.html" class="top-nav-link">Task 3: Bootstrap Navbar</a>
+      <a href="task4.html" class="top-nav-link">Task 4: Portfolio</a>
+    </nav>
+  </header>
+
+  <main class="container py-5">
+    <section class="text-center mb-5">
+      <span class="badge bg-primary-subtle text-primary border border-primary-subtle px-3 py-2 rounded-pill fw-semibold mb-2">Bootstrap 5.3 12-Column Grid</span>
+      <h1 class="display-6 fw-bold text-dark">Responsive Column System</h1>
+      <p class="text-secondary mx-auto" style="max-width: 650px;">
+        Demonstrating Bootstrap's 12-column grid adaptation across breakpoints: 4 columns on desktop (3 side by side), 6 columns on tablet (2 on row 1, 1 on row 2), and 12 columns on mobile (stacked).
+      </p>
+    </section>
+
+    <div class="row g-4">
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="card card-feature h-100 shadow-sm p-4">
+          <div class="d-flex align-items-center justify-content-between mb-3">
+            <div class="icon-box bg-primary-subtle text-primary">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <span class="badge bg-dark-subtle text-dark font-monospace">col-12 col-md-6 col-lg-4</span>
+          </div>
+          <h2 class="h5 fw-bold text-dark mb-2">Column 1: Frontend Layer</h2>
+          <p class="text-secondary small mb-4 flex-grow-1">
+            Builds accessible, dynamic interfaces using component-driven frameworks, responsive layout techniques, and strict type checking.
+          </p>
+          <div class="border-top pt-3">
+            <div class="d-flex justify-content-between text-muted small">
+              <span>Desktop Width:</span>
+              <strong class="text-dark">4 / 12 (33.3%)</strong>
+            </div>
+            <div class="d-flex justify-content-between text-muted small mt-1">
+              <span>Tablet Width:</span>
+              <strong class="text-dark">6 / 12 (50.0%)</strong>
+            </div>
+            <div class="d-flex justify-content-between text-muted small mt-1">
+              <span>Mobile Width:</span>
+              <strong class="text-dark">12 / 12 (100%)</strong>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="card card-feature h-100 shadow-sm p-4">
+          <div class="d-flex align-items-center justify-content-between mb-3">
+            <div class="icon-box bg-success-subtle text-success">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+              </svg>
+            </div>
+            <span class="badge bg-dark-subtle text-dark font-monospace">col-12 col-md-6 col-lg-4</span>
+          </div>
+          <h2 class="h5 fw-bold text-dark mb-2">Column 2: Backend Services</h2>
+          <p class="text-secondary small mb-4 flex-grow-1">
+            Develops scalable microservices, relational schemas, connection pooling, and optimized query pipelines with high reliability.
+          </p>
+          <div class="border-top pt-3">
+            <div class="d-flex justify-content-between text-muted small">
+              <span>Desktop Width:</span>
+              <strong class="text-dark">4 / 12 (33.3%)</strong>
+            </div>
+            <div class="d-flex justify-content-between text-muted small mt-1">
+              <span>Tablet Width:</span>
+              <strong class="text-dark">6 / 12 (50.0%)</strong>
+            </div>
+            <div class="d-flex justify-content-between text-muted small mt-1">
+              <span>Mobile Width:</span>
+              <strong class="text-dark">12 / 12 (100%)</strong>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="card card-feature h-100 shadow-sm p-4">
+          <div class="d-flex align-items-center justify-content-between mb-3">
+            <div class="icon-box bg-warning-subtle text-warning">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg>
+            </div>
+            <span class="badge bg-dark-subtle text-dark font-monospace">col-12 col-md-6 col-lg-4</span>
+          </div>
+          <h2 class="h5 fw-bold text-dark mb-2">Column 3: Cloud Operations</h2>
+          <p class="text-secondary small mb-4 flex-grow-1">
+            Manages containerized clusters, automated delivery workflows, infrastructure provisioning, and continuous deployment environments.
+          </p>
+          <div class="border-top pt-3">
+            <div class="d-flex justify-content-between text-muted small">
+              <span>Desktop Width:</span>
+              <strong class="text-dark">4 / 12 (33.3%)</strong>
+            </div>
+            <div class="d-flex justify-content-between text-muted small mt-1">
+              <span>Tablet Width:</span>
+              <strong class="text-dark">6 / 12 (50.0%)</strong>
+            </div>
+            <div class="d-flex justify-content-between text-muted small mt-1">
+              <span>Mobile Width:</span>
+              <strong class="text-dark">12 / 12 (100%)</strong>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <section class="grid-explainer p-4 mt-5">
+      <div class="row align-items-center">
+        <div class="col-md-4">
+          <h3 class="h6 fw-bold text-dark mb-1">Grid System Compliance</h3>
+          <p class="text-muted small mb-md-0">Verification of exact responsive rules specified in assignment requirements.</p>
+        </div>
+        <div class="col-md-8">
+          <div class="row g-2 text-center small">
+            <div class="col-4">
+              <div class="bg-light p-2 rounded border">
+                <span class="d-block fw-bold text-dark">Desktop (&ge; 992px)</span>
+                <span class="text-primary font-monospace">col-lg-4</span>
+                <span class="d-block text-muted">3 equal columns</span>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="bg-light p-2 rounded border">
+                <span class="d-block fw-bold text-dark">Tablet (768 - 991px)</span>
+                <span class="text-primary font-monospace">col-md-6</span>
+                <span class="d-block text-muted">2 on row 1, 1 on row 2</span>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="bg-light p-2 rounded border">
+                <span class="d-block fw-bold text-dark">Mobile (&lt; 768px)</span>
+                <span class="text-primary font-monospace">col-12</span>
+                <span class="d-block text-muted">All columns stacked</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

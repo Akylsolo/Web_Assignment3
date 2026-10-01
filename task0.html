@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 0 - Responsive Typography</title>
+  <link rel="stylesheet" href="css/task0.css">
+</head>
+<body>
+
+  <header class="top-nav">
+    <a href="index.html" class="top-nav-brand">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+        <polyline points="2 17 12 22 22 17"></polyline>
+        <polyline points="2 12 12 17 22 12"></polyline>
+      </svg>
+      <span>Assignment #3</span>
+    </a>
+    <nav class="top-nav-links">
+      <a href="task0.html" class="top-nav-link active">Task 0: Typography</a>
+      <a href="task1.html" class="top-nav-link">Task 1: Media Layout</a>
+      <a href="task2.html" class="top-nav-link">Task 2: Bootstrap Grid</a>
+      <a href="task3.html" class="top-nav-link">Task 3: Bootstrap Navbar</a>
+      <a href="task4.html" class="top-nav-link">Task 4: Portfolio</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="screen-badge-container">
+      <div class="screen-badge">
+        <span class="screen-indicator-mobile">Mobile Viewport (&lt; 768px): Small Typography</span>
+        <span class="screen-indicator-tablet">Tablet Viewport (768px - 1023px): Medium Typography</span>
+        <span class="screen-indicator-desktop">Desktop Viewport (&ge; 1024px): Large Typography</span>
+      </div>
+    </div>
+
+    <article class="article-card">
+      <h1>Fluid Scales and Responsive Typography</h1>
+      <p class="lead">
+        Responsive typography ensures readability and visual harmony across diverse device screens by dynamically adjusting typographic proportions according to specific viewport breakpoints.
+      </p>
+
+      <h2>Core Principles of Web Typography</h2>
+      <p>
+        Modern web applications demand text hierarchies that naturally adapt whether viewed on a compact handheld smartphone, an intermediate tablet display, or a high-resolution ultra-wide monitor. Without responsive font adjustments, desktop-scale headings overwhelm smaller phone displays, while mobile-sized text becomes illegible on large displays.
+      </p>
+
+      <div class="quote-box">
+        Responsive web design is not merely about resizing images and shuffling columns; typography is the cornerstone of effective visual communication on the web.
+      </div>
+
+      <h3>Breakpoints and Visual Proportions</h3>
+      <p>
+        In this implementation, pure CSS media queries scale all heading levels and body copy seamlessly. Viewports below 768px render compact type, tablet viewports between 768px and 1023px scale to balanced intermediate values, and desktop viewports above 1024px deliver prominent headlines with comfortable reading measures.
+      </p>
+
+      <div class="metrics-table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Element</th>
+              <th>Mobile (&lt; 768px)</th>
+              <th>Tablet (768px - 1023px)</th>
+              <th>Desktop (&ge; 1024px)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Heading 1</strong></td>
+              <td><span class="pill">1.75rem / 28px</span></td>
+              <td><span class="pill">2.25rem / 36px</span></td>
+              <td><span class="pill">3.00rem / 48px</span></td>
+            </tr>
+            <tr>
+              <td><strong>Heading 2</strong></td>
+              <td><span class="pill">1.35rem / 21.6px</span></td>
+              <td><span class="pill">1.75rem / 28px</span></td>
+              <td><span class="pill">2.25rem / 36px</span></td>
+            </tr>
+            <tr>
+              <td><strong>Heading 3</strong></td>
+              <td><span class="pill">1.15rem / 18.4px</span></td>
+              <td><span class="pill">1.35rem / 21.6px</span></td>
+              <td><span class="pill">1.60rem / 25.6px</span></td>
+            </tr>
+            <tr>
+              <td><strong>Body Text</strong></td>
+              <td><span class="pill">0.925rem / 14.8px</span></td>
+              <td><span class="pill">1.025rem / 16.4px</span></td>
+              <td><span class="pill">1.125rem / 18px</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+  </main>
+
+</body>
+</html>
